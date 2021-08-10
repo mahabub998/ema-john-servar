@@ -17,7 +17,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 client.connect(err => {
   const productsCollection = client.db("emaJhoneStoreTwo").collection("product0s");
   const ordersCollection = client.db("emaJhoneStoreTwo").collection("orders");
-//   post ta use kora hoy database data pathanor ka jenja
+//   post ta use kora hoy database data pathanor kaj
 //   start post
   app.post ('/addProduct',(req,res) => {
       const products = req.body;
